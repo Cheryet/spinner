@@ -1,11 +1,11 @@
-//Spinner animation in terminal 
+//Spinner animation in terminal
 
-const array = ['|', '/', '-', '\\', '|', '/', '-', '\\', '|']
+const array = ['|', '/', '-', '\\', '|', '/', '-', '\\', '|'];
 let time = 100;
 
-for (let char of array){
+for (let char of array) {
   setTimeout(() => {
-    process.stdout.write(`\r${char}   `)
+    process.stdout.write(`\r${char}   `);
   }, time);
   time += 200;
-};
+}
